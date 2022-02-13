@@ -1,3 +1,1 @@
-<div align="center">
-    <h1>mridul.tech Links</h1>
-</div>
+<h1>Mridul.tech Links</h1>
