@@ -44,7 +44,7 @@ const linkItems = [
         icon: <AiFillLinkedin size={36} />,
         color: "#fff",
         bg: "#0f81f0",
-        url: 'https://twitter.com/i_mridul'
+        url: 'https://www.linkedin.com/in/mridul2820/'
     }
 ]
 
