@@ -9,6 +9,7 @@ import {
 import { BiWorld } from 'react-icons/bi';
 import { MdArrowForwardIos } from 'react-icons/md';
 import { v4 as uuidv4 } from 'uuid';
+import { NextSeo } from 'next-seo';
 
 const linkItems = [
   {
@@ -54,8 +55,37 @@ const linkItems = [
 ];
 
 const AllLinks = () => {
+  const SEO = {
+    title: 'Quick Links of mridul.tech',
+    description: 'Quick Links of mridul.tech',
+    twitter: {
+      cardType: 'summary_large_image',
+    },
+    openGraph: {
+      title: 'Quick Links of mridul.tech',
+      description: 'Quick Links of mridul.tech',
+      type: 'website',
+      locale: 'en_IN',
+      url: 'mridul.tech',
+      site_name: 'Next Template',
+      images: [
+        {
+          url: 'https://res.cloudinary.com/dgt1da1bz/image/upload/v1641049940/assets/icon_pqq3uw.png',
+          width: 300,
+          height: 300,
+          alt: 'Quick Links',
+        },
+      ],
+    },
+    twitter: {
+      handle: '@i_mridul',
+      site: '@i_mridul',
+      cardType: 'summary_large_image',
+    },
+  };
   return (
     <div className="p-5 flex flex-col gap-5 justify-center items-center">
+      <NextSeo {...SEO} />
       <div className="rounded-full w-20 h-20 overflow-hidden shadow-bs1">
         <Image
           src="/mridul.jpg"
